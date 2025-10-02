@@ -1,0 +1,44 @@
+:root{
+--bg:#f7f7fb;
+--card:#ffffff;
+--accent:#2563eb;
+--text:#0f172a;
+--muted:#64748b;
+--radius:12px;
+}
+
+/* Reset (velmi jednoduchý) */
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.5;color:var(--text);background:var(--bg)}
+.container{max-width:1000px;margin:0 auto;padding:1rem}
+
+.site-header{background:linear-gradient(90deg, rgba(37,99,235,0.95), rgba(99,102,241,0.95));color:white}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;padding:1rem}
+.logo{margin:0;font-size:1.25rem}
+.main-nav a{color:rgba(255,255,255,0.95);text-decoration:none;margin-left:1rem}
+
+.hero{padding:3rem 1rem;text-align:center}
+.hero h2{margin:0 0 .5rem;font-size:1.75rem}
+.hero p{color:var(--muted);margin:0 0 1rem}
+.btn{display:inline-block;padding:.6rem 1rem;border-radius:999px;background:var(--accent);color:white;text-decoration:none;border:none;cursor:pointer}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin:2rem 0}
+.card{background:var(--card);padding:1rem;border-radius:var(--radius);box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+.card h3{margin-top:0}
+
+.contact{background:transparent;padding:1rem 0}
+.contact-form{display:grid;gap:.6rem;max-width:520px}
+.contact-form label{display:block;font-size:.9rem;color:var(--muted)}
+.contact-form input,.contact-form textarea{width:100%;padding:.6rem;border:1px solid #e6eef8;border-radius:8px}
+
+.site-footer{padding:1rem 0;color:var(--muted);text-align:center}
+
+/* drobná responzivita */
+@media (max-width:600px){
+.site-header .container{flex-direction:column;gap:.6rem}
+.main-nav a{margin-left:.5rem}
+.hero{padding:2rem 1rem}
+}
+
+/* Přístupnost: focus stavy */
+a:focus, button:focus, input:focus, textarea:focus{outline:3px solid rgba(37,99,235,0.25);outline-offset:2px}

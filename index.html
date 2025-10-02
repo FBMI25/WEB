@@ -1,0 +1,47 @@
+<!doctype html>
+<article class="card">
+<h3>Funkce 1</h3>
+<p>Krátký popis funkce nebo služby. Jednoduché a výstižné.</p>
+</article>
+<article class="card">
+<h3>Funkce 2</h3>
+<p>Další stručný popis. Můžete přidat obrázky nebo ikony.</p>
+</article>
+<article class="card">
+<h3>Funkce 3</h3>
+<p>Poslední ukázková funkce. Lehké, rychlé a responzivní.</p>
+</article>
+</section>
+
+<section id="contact" class="contact">
+<h2>Kontakt</h2>
+<form class="contact-form" action="#" method="post">
+<label>
+Jméno
+<input type="text" name="name" placeholder="Vaše jméno">
+</label>
+<label>
+E-mail
+<input type="email" name="email" placeholder="you@example.com">
+</label>
+<label>
+Zpráva
+<textarea name="message" rows="4" placeholder="Napište zprávu..."></textarea>
+</label>
+<button type="submit" class="btn">Odeslat</button>
+</form>
+</section>
+</main>
+
+<footer class="site-footer">
+<div class="container">
+<p>© <span id="year"></span> MojeStránka — Všechna práva vyhrazena</p>
+</div>
+</footer>
+
+<script>
+// doplnění aktuálního roku
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
